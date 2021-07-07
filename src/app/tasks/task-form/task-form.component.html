@@ -1,0 +1,45 @@
+<div class="col-sm-12">
+  <div class="card mt-3">
+    <div class="card-header">Nova Tarefa</div>
+    <div class="card-body">
+      <form class="needs-validation" [formGroup]="formValue">
+        <div class="form-group">
+          <label for="title">Título:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            formControlName="titulo"
+            required
+          />
+          <div class="invalid-feedback">Por favor preencha o título</div>
+        </div>
+        <div class="form-group">
+          <label for="description">Descrição</label>
+          <textarea
+            class="form-control"
+            formControlName="descricao"
+            rows="3"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Por favor preencha a descrição</div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary mr-2"
+          (click)="addTask()"
+          [disabled]="!formValue.valid"
+        >
+          Salvar Tarefa
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          (click)="cancelTask()"
+        >
+          Cancelar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

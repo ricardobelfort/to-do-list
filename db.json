@@ -1,0 +1,34 @@
+{
+  "tarefas": [
+    {
+      "id": 1,
+      "titulo": "Academia",
+      "descricao": "Ir para academia todos os dias as 6hs da manhã"
+    },
+    {
+      "id": 2,
+      "titulo": "Levar a esposa",
+      "descricao": "Levar a esposa para o trabalho as 7hs todos os dias"
+    },
+    {
+      "id": 3,
+      "titulo": "Daily Meeting",
+      "descricao": "Daily meeting todos os dias as 8h30 horário local"
+    },
+    {
+      "id": 4,
+      "titulo": "Teste em Angular",
+      "descricao": "Terminar o teste de Angular da VX Case até o dia 7 de julho"
+    },
+    {
+      "id": 5,
+      "titulo": "Prova de BD",
+      "descricao": "Estudar para a prova de banco de dados da faculdade"
+    },
+    {
+      "id": 6,
+      "titulo": "Curso de ReactJS",
+      "descricao": "Estudar para terminar o curso de ReactJS da Rockeseat"
+    }
+  ]
+}
