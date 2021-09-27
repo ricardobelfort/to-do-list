@@ -1,5 +1,6 @@
-import { NgModule } from "@angular/core";
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { SharedModule } from "./../shared/shared.module";
 
 import { TasksRoutingModule } from "./tasks-routing.module";
 import { IconsModule } from "./../icons/icons.module";
@@ -14,8 +15,10 @@ import { TaskListComponent } from "./task-list/task-list.component";
     FormsModule,
     ReactiveFormsModule,
     IconsModule,
+    SharedModule,
   ],
   exports: [TaskFormComponent, TaskListComponent],
   declarations: [TaskFormComponent, TaskListComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class TasksModule {}
